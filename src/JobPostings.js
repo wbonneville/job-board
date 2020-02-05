@@ -1,5 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
+import Post from "./Post";
 
 export default function JobPostings() {
-  return <h1>Postings</h1>;
+  return (
+    <div className="row ">
+      <div className="col-xs-12">
+        <Post />
+      </div>
+    </div>
+  );
 }
