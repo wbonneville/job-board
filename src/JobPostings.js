@@ -4,13 +4,13 @@ import Post from "./Post";
 export default function JobPostings() {
   var names = [];
 
-  for (let i = 0; i < 100; i++) {
+  for (let i = 0; i < 120; i++) {
     names.push("job space " + i);
   }
 
   var namesList = names.map(function(name) {
     return (
-      <div className="col-xs-4">
+      <div className="col-xs-3">
         <Post name={name} />
       </div>
     );
