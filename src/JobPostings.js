@@ -1,20 +1,26 @@
 import React, { useState } from "react";
 import Post from "./Post";
+import styled from "styled-components";
 
+const Container = styled.div`
+  margin: 2%;
+`;
 export default function JobPostings() {
-  var names = [];
+  const [postnames, setPostName] = useState([]);
 
   for (let i = 0; i < 120; i++) {
-    names.push("job space " + i);
+    postnames.push("job space " + i);
   }
 
-  var namesList = names.map(function(name) {
+  var namesList = postnames.map(function(name) {
     return (
-      <div className="col-xs-3">
-        <Post name={name} />
-      </div>
+      <>
+        <div className="col-xs-3">
+          <Post name={name} />
+        </div>
+      </>
     );
   });
 
-  return <div className="row center-xs ">{namesList}</div>;
+  return <Container className="row center-xs ">{namesList}</Container>;
 }
