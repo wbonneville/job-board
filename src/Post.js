@@ -6,7 +6,7 @@ const post = styled.form`
 `;
 
 const Modal = styled.div`
-  height: 80px;
+  height: 200px;
   background-color: #f6f6f6;
   border: 1px solid whitesmoke;
 `;
