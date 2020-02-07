@@ -15,7 +15,7 @@ export default function Post({ name }) {
   return (
     <post>
       <p>{name}</p>
-      <Modal />
+      <Modal></Modal>
     </post>
   );
 }
