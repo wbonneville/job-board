@@ -9,6 +9,9 @@ const Modal = styled.div`
   height: 200px;
   background-color: #f6f6f6;
   border: 1px solid whitesmoke;
+  margin-left: 1%;
+  margin-right: 1%;
+  box-shadow: 0px 4px 10px;
 `;
 
 export default function Post({ name }) {

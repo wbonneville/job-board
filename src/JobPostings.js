@@ -3,19 +3,21 @@ import Post from "./Post";
 import styled from "styled-components";
 
 const Container = styled.div`
-  margin: 2%;
+  margin: 3.5%;
 `;
 export default function JobPostings() {
   const [postnames, setPostName] = useState([]);
 
+  let tempName = "space ";
+
   for (let i = 0; i < 120; i++) {
-    postnames.push("job space " + i);
+    postnames.push(tempName + i);
   }
 
-  var namesList = postnames.map(function(name) {
+  var namesList = postnames.map(name => {
     return (
       <>
-        <div className="col-xs-3">
+        <div className="col-xs-4">
           <Post name={name} />
         </div>
       </>
