@@ -24,7 +24,6 @@ export default function Post({ name }) {
     <PostBox>
       <Modal>
         <p className="name">{name}</p>
-        <input type="text" />
       </Modal>
     </PostBox>
   );
