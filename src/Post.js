@@ -11,7 +11,7 @@ const Modal = styled.div`
   border: 1px solid whitesmoke;
   margin-left: 1%;
   margin-right: 1%;
-  box-shadow: 0px 4px 10px;
+  box-shadow: 0px 4px 12px grey;
 `;
 
 export default function Post({ name }) {
