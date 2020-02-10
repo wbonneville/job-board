@@ -1,8 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
-const post = styled.form`
+const PostBox = styled.form`
   margin-top: 3%;
+
+  & .name {
+    font-size: 18px;
+    font-weight: 100;
+  }
 `;
 
 const Modal = styled.div`
@@ -16,9 +21,11 @@ const Modal = styled.div`
 
 export default function Post({ name }) {
   return (
-    <post>
-      <p>{name}</p>
-      <Modal></Modal>
-    </post>
+    <PostBox>
+      <Modal>
+        <p className="name">{name}</p>
+        <input type="text" />
+      </Modal>
+    </PostBox>
   );
 }
